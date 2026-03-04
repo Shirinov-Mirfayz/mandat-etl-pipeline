@@ -1,0 +1,6 @@
+
+# Data files
+data/cleaned/
+data/raw/
+*.zip
+
