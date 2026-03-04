@@ -1,12 +1,7 @@
 # mandat-etl-pipeline
 
-This project implements an ETL pipeline for processing UZBMB mandate data.
-
-## Pipeline
-1. Raw CSV files ingestion
-2. Data cleaning using Pandas
-3. Loading data into SQL Server
-4. SQL transformations and filtering
+This project implements a simple ETL pipeline for processing UZBMB mandate data.  
+Raw CSV files are cleaned using **Python (Pandas)** and loaded into **SQL Server** where additional filtering and transformations are applied.
 
 ## Tools
 - Python
@@ -14,7 +9,18 @@ This project implements an ETL pipeline for processing UZBMB mandate data.
 - SQL Server
 
 ## Project Structure
-data/raw – original CSV files  
-data/cleaned – cleaned dataset  
-scripts – ETL scripts  
-sql – SQL transformation queries
+
+mandat-etl-pipeline  
+├── data  
+│   ├── raw        # raw CSV files (ignored)  
+│   └── cleaned    # cleaned dataset (ignored)  
+├── scripts        # ETL scripts  
+├── sql            # SQL transformations  
+└── README.md  
+
+## Data Note
+Large datasets are excluded from this repository using `.gitignore` due to GitHub file size limits.  
+To reproduce the pipeline, place the raw CSV files in `data/raw/` and run the ETL script.
+
+## Author
+Mirfayz Shirinov
